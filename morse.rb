@@ -62,7 +62,6 @@ class Morse
     end
     
     def gap
-        puts "|"
         sleep 0.25
     end
     
