@@ -1,8 +1,6 @@
 require 'pi_piper'
 include PiPiper
 
-
-
 class Morse
     def initialize(pin)
         @pin = PiPiper::Pin.new(pin: pin, direction: :out)
