@@ -70,7 +70,7 @@ class Morse
         bu_letter = @charset[letter]
         bu_letter.each do |part|
             self.send(part)
-            self.gap if part != bu_letter.last
+            self.gap
         end
     end
     
@@ -82,7 +82,7 @@ class Morse
         bu_word = word.split("")
         bu_word.each do |letter|
             self.do_letter(letter)
-            self.letter_break if letter != bu_word.last
+            self.letter_break
         end
     end
     
@@ -94,7 +94,7 @@ class Morse
         bu_sentence = sentence.split(" ")
         bu_sentence.each do |word|
             self.do_word(word)
-            self.space if word != bu_sentence.last
+            self.space
         end
     end
     
